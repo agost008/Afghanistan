@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afghanistan — panorama e notizie principali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-row wrap">
+      <div class="brand">Search</div>
+      <div class="search-shell">
+        <input id="searchInput" type="text" value="Afghanistan" aria-label="Cerca" />
+        <button class="icon-btn" id="searchButton" aria-label="cerca">⌕</button>
+      </div>
+      <div class="avatar">F</div>
+    </div>
+    <nav class="tabs wrap" aria-label="Schede pagina">
+      <a class="active" href="#">Tutti</a>
+      <a href="#notizie">Notizie</a>
+      <a href="#">Immagini</a>
+      <a href="#">Video</a>
+      <a href="#">Web</a>
+      <a href="#fonti">Fonti</a>
+    </nav>
+  </header>
+
+  <main class="wrap main-layout">
+    <section class="country-block card">
+      <div class="country-head">
+        <div>
+          <h1 id="countryTitle">Afghanistan</h1>
+          <p class="muted" id="countryLabel">Paese</p>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-photo panel">
+          <img id="heroImage" alt="Panoramica Afghanistan" />
+        </div>
+        <div class="map-card panel">
+          <img id="mapImage" alt="Mappa Afghanistan" />
+        </div>
+        <div class="mini-side">
+          <div class="mini-card panel">
+            <div class="mini-title">Come leggerla</div>
+            <div class="mini-big" id="travelTime">Quadro generale</div>
+            <div class="mini-small" id="travelSub">Panoramica sintetica del Paese</div>
+          </div>
+          <div class="mini-card panel flag-box">
+            <div class="flag-emoji" id="flagEmoji">🇦🇫</div>
+            <div class="mini-small" id="flagLabel">Afghanistan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-area">
+        <div>
+          <h2 class="section-title">Schede rapide</h2>
+          <div class="quick-cards" id="quickCards"></div>
+        </div>
+        <aside class="info-box panel">
+          <h2>Informazioni</h2>
+          <p id="introText"></p>
+          <div class="info-table" id="infoTable"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="news-section" id="notizie">
+      <div class="section-heading-row">
+        <h2 class="section-title">Notizie principali</h2>
+        <div class="search-inline-shell">
+          <input id="filterInput" type="text" placeholder="Filtra per parola chiave: legge, scuola, media..." />
+        </div>
+      </div>
+      <div class="news-list card" id="newsList"></div>
+    </section>
+
+    <section class="faq-section card">
+      <h2 class="section-title">Domande utili per una presentazione</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Qual è il punto più importante della legge del 2024?</summary>
+          <p>Di solito si citano due nodi: articolo 13 su abbigliamento/voce femminile e articolo 17 sui media e le immagini di esseri viventi.</p>
+        </details>
+        <details>
+          <summary>Quali effetti vengono collegati alla legge del 2024?</summary>
+          <p>Le analisi ONU collegano la legge a restrizioni su presenza delle donne nello spazio pubblico, informazione, libertà personali e controllo sociale.</p>
+        </details>
+        <details>
+          <summary>Quali temi conviene collegare?</summary>
+          <p>Scuola oltre la sesta classe, università, lavoro nelle ONG, libertà di movimento, parchi/palestre/bagni pubblici e censura dei media.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer card" id="fonti">
+      <p><strong>Fonti principali:</strong> ONU, OHCHR, UNAMA, UNICEF, Banca Mondiale, AP, Reuters.</p>
+    </footer>
+  </main>
+
+    <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
